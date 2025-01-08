@@ -1,4 +1,5 @@
 /* Importation des font depuis google font */
+@import url('/src/css/normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -12,20 +13,47 @@ header{
     position: sticky;
 }
 
+footer{
+    width: 100%;
+    height: 100%;
+    background: #001F3F;
+    padding: 20px 0;
+}
+
 .carousel-item{
     display: none;
 }
 
-.prev, .next{
-    background: rgba(255, 255, 255, 0.10);
-    backdrop-filter: blur(5px);
-    border-radius: 50%;
-    padding: 12px;
+.text-no-decoration{
+    text-decoration: none !important;
 }
 
-.prev, .next > a{
-    cursor: pointer;
-  }
+#contact-container > h2,p,h1,input{
+    color: black !important;
+}
+
+.sousMenu{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#menu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+    flex-direction: column;
+    background-color: #BD0202;
+    gap: 20px;
+}
+
+#menuHeader{
+    background: #BD0202;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex; 
+    align-items: center;
+}
 
 @media screen and (max-width: 600px) {
     #logoHeader{
@@ -55,6 +83,14 @@ header{
         height: 22%;
         margin-left: 0;
         margin-right: 20px;
+    }
+
+    #closeMenuBarre{
+        width: 22px;
+        height: 22%;
+        margin-left: 0;
+        margin-right: 20px;
+        display: none;
     }
 
     h2{
@@ -92,6 +128,14 @@ header{
         word-wrap: break-word;
     }
 
+    th, td {
+        border: 1px solid white;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+
+
     .container{
         padding-left: 20px;
         padding-right: 20px;
@@ -109,6 +153,35 @@ header{
 
     #acceuil_text-3{
         margin-top: 70px;
+    }
+
+    #livre_text-1{
+        margin-top: 48px;
+    }
+    
+    #livre_texte-2{
+        margin-top: 28px;
+    }
+
+    #livre_texte-3{
+        margin-top: 43px;
+    }
+
+    #mangaka_text-1{
+        margin-top: 56px;
+    }
+
+    #mangaka_texte-2{
+        margin-top: 28px;
+    }
+
+    #mangaka_text-3{
+        margin-top: 56px;
+    }
+
+    #mangaka_texte-4{
+        margin-top: 28px;
+        margin-bottom: 28px;
     }
 
     .carousel-acceuil-image{
@@ -148,7 +221,7 @@ header{
         border-radius: 10px;
         padding: 10px;
         width: 50%;
-        transform:translate(25%,40%)
+        transform:translate(25%,60%)
     }
 
     .mx{
@@ -161,6 +234,173 @@ header{
         word-wrap: break-word;
         letter-spacing: 1.20px;
     }
+
+    .prev, .next{
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(5px);
+        border-radius: 50%;
+        padding: 12px;
+    }
+    
+    .prev, .next > a{
+        cursor: pointer;
+    }
+
+    #logoFooter{
+        padding-top: 1.75vh;
+        width: 20vw;
+        height: auto;
+    }
+
+    #footer-container-1{
+        display: flex; 
+        gap:100px; 
+        justify-content: center;
+        align-items:start ;
+    }
+
+    #footer-container-2{
+        padding-top: 50px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .mx-2{
+        color: white;
+        font-size: 12px;
+        font-family: 'Sora';
+        font-weight: 300;
+        text-decoration: underline;
+        line-height: 19.20px;
+        word-wrap: break-word;
+    }
+
+    #footer-container-3{
+        text-align: center;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #mmi-logo{
+        padding-top: 20px;
+        width: 132px;
+        height: 52px;
+    }
+
+    #footer-sub-container-1{
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    #mangaka_container{
+        padding-bottom: 90px;
+    }
+    #musique_container-1{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #video_mangaka{
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact-container > input{
+        width: 287px; 
+        height: 38px; 
+        background: #F7F7FD; 
+        border-radius: 4px; 
+        border: 2px rgba(0, 0, 0, 0.75) solid;
+        display: block;
+    }
+
+    #contact-container{
+        padding-bottom: 50px;
+        transform: translateY(-20%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: white;
+        border-radius: 20px; 
+        border: 5px #BD0202 solid;
+        color: black !important;
+        text-align: center;
+    }
+
+    #contact-container-2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stu{
+        color: white !important;
+        font-size: 13px;
+        font-family: 'Sora';
+        font-weight: 300;
+        line-height: 20.80px;
+        word-wrap: break-word;
+    }
+
+    #contact-container-3{
+        padding-top: 20px;
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #social-media{
+        display: flex;
+        gap: 30px;
+    }
+
+    #glossaire-container{
+        padding-top: 56px;
+        padding-bottom: 118px;
+    }
+
+    .menuElement > a{
+        /*style text*/
+        color : white;
+        font-size: 16px;
+        font-family: "Sora";
+        font-weight: 400;
+        line-height: 25.60px;
+        text-decoration: none;
+
+        /* style back*/
+        word-wrap: break-word;
+        margin-left: 50px;
+        background: #ED6F00;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    }
+
+    .menuElement > img{
+        width: 14.9px;
+        height: 10.5px;
+    }
+
+    .BackSubMenu > a{
+        color: white !important;
+        font-size: 24px !important;
+        font-family: "Spectral" !important;
+        font-weight: 700 !important;
+        line-height: 26.40px !important;
+        word-wrap: break-word !important
+    }
+
 }
 
 @media screen and (min-width: 601px) {
@@ -191,6 +431,14 @@ header{
         height: 44%;
         margin-left: 0;
         margin-right: 50px;
+    }
+
+    #closeMenuBarre{
+        width: 44px;
+        height: 44%;
+        margin-left: 0;
+        margin-right: 50px;
+        display: none;
     }
 
     h2{
@@ -228,6 +476,22 @@ header{
         word-wrap: break-word;
     }
 
+    th, td {
+        border: 1px solid white;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+
+    .pochita{
+        position: relative ;
+        background-image: url(/assets/img/pochita.png);
+        background-size: 756px;
+        width: 756px;
+        height: 490px;
+    
+    }
+    
     .container{
         padding-left: 100px;
         padding-right: 100px;
@@ -246,8 +510,236 @@ header{
     #acceuil_text-3{
         margin-top: 210px;
     }
+    
+    #livre_text-1{
+        margin-top: 48px;
+    }
+    
+    #livre_texte-2{
+        margin-top: 28px;
+    }
+
+    #livre_texte-3{
+        margin-top: 43px;
+    }
+
+    #mangaka_text-1{
+        margin-top: 56px;
+    }
+
+    #mangaka_texte-2{
+        margin-top: 28px;
+    }
+
+    #mangaka_text-3{
+        margin-top: 56px;
+    }
+
+    #mangaka_texte-4{
+        margin-top: 28px;
+        padding-bottom: 28px;
+    }
 
     .barre-transition{
         padding-top: 32px;
+    }
+
+    .bs{
+        font-family: 'Inter';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 142.857%;
+    }
+
+    .st{
+        color: white;
+        font-family: 'Sora';
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 160%;
+        word-wrap: break-word;
+    }
+
+    .carousel-acceuil-description{
+        position: absolute;
+        background: var(--Dark-Gray, #3C3C3C);
+        border-radius: 10px;
+        padding: 10px;
+        width: 20%;
+        transform:translate(50%,40%)
+    }
+
+    .mx{
+        color: black;
+        font-size: 24px;
+        font-family: 'Sora';
+        font-weight: 700;
+        text-decoration: underline;
+        line-height: 24px;
+        word-wrap: break-word;
+        letter-spacing: 2.40px;
+    }
+
+    .prev, .next{
+        margin-top: 200px;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(5px);
+        border-radius: 50%;
+        padding: 12px;
+    }
+    
+    .prev, .next > a{
+        cursor: pointer;
+    }
+
+    #footer-container-1{
+        display: flex; 
+        gap:1100px; 
+        justify-content: center;
+        align-items:start ;
+    }
+
+    
+    #footer-container-2{
+        padding-top: 130px;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .mx-2{
+        color: white;
+        font-size: 24px;
+        font-family: 'Sora';
+        font-weight: 300;
+        text-decoration: underline;
+        line-height: 19.20px;
+        word-wrap: break-word;
+    }
+
+    #footer-container-3{
+        text-align: center;
+        padding-top: 120px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #mmi-logo{
+        padding-top: 20px;
+        width: 264px;
+        height: 104px;
+    }
+
+    #logoFooter{
+        padding-top: 1.75vh;
+        width: 20vw;
+        height: auto;
+    }
+
+    #footer-sub-container-1{
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    #mangaka_container{
+        padding-bottom: 180px;
+    }
+
+    #contact-container > input{
+        width: 287px; 
+        height: 38px; 
+        background: #F7F7FD; 
+        border-radius: 4px; 
+        border: 2px rgba(0, 0, 0, 0.75) solid;
+        display: block;
+    }
+
+    #contact-container{
+        padding-bottom: 50px;
+        transform: translateY(-20%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: white;
+        border-radius: 20px; 
+        border: 5px #BD0202 solid;
+        color: black !important;
+        text-align: center;
+    }
+
+    #contact-container-2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .stu{
+        color: white !important;
+        font-size: 26px;
+        font-family: 'Sora';
+        font-weight: 300;
+        line-height: 41.60px;
+        word-wrap: break-word;
+    }
+
+    #contact-container-3{
+        padding-top: 40px;
+        padding-bottom: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #social-media{
+        display: flex;
+        gap: 50px;
+    }
+
+    .social-media-logo{
+        width: 88px;
+        height: 88px;
+    }
+
+    #glossaire-container{
+        padding-top: 112px;
+        padding-bottom: 236px;
+    }
+
+    .menuElement > a{
+        /*style text*/
+        color : white;
+        font-size: 32px;
+        font-family: "Sora";
+        font-weight: 400;
+        line-height: 25.60px;
+        text-decoration: none;
+
+        /* style back*/
+        word-wrap: break-word;
+        margin-left: 50px;
+        background: #ED6F00;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    }
+
+    .menuElement > img{
+        width: 29,8px;
+        height: 21px;
+    }
+
+    .BackSubMenu > a{
+        color: white !important; 
+        font-size: 44px !important; 
+        font-family: "Spectral" !important; 
+        font-weight : 700 !important; 
+        line-height: 30px !important;
+        word-wrap : break-word !important;
     }
 }
