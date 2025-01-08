@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : WOZNIAK
+- PRÉNOM : Antonin
+- GROUPE : C2
+- URL du site : https://chainemaster-antonin-wozniak.netlify.app
+- URL FIGMA : https://www.figma.com/design/PmmRraTu89iKIhS96mz60e/Maquettes-projet-individuel-%E2%80%94-Antonin-WOZNIAK?node-id=1-531&t=Cg0dbeqSIIj0bN4V-1
